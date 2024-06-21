@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>#10-Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input data-element="search-input" type="text" placeholder="Enter your Location">
+            <button data-element="search-button" class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+            <img src="images/404.png">
+            <p>Ooops! Invalid Location :/</p>
+        </div>
+
+        <div data-element="weather-box" class="weather-box">
+            <img data-element="image" src="">
+            <p data-element="temperature" class="temperature"></p>
+            <p data-element="description" class="description"></p>
+        </div>
+
+        <div data-element="weather-details" class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span data-element="humidity"></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span data-element="wind"></span>
+                    <p>Wind Speed</p>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/36873b9bf1.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
